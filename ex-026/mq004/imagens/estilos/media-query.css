@@ -1,3 +1,60 @@
 @charset "UTF-8";
 
 /* Todas as demais midias */
+
+/* Typical Device Breakpoints
+Celular: 
+Tablet: 
+Desktop:
+TV: */
+
+@media print{ /*IMPRESSÃO */
+    body {
+        background-image: url(../back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {display: none; }
+img#tablet {display: none; }
+img#print {display: block; }
+img#pc {display: none; }
+img#tv {display: none; }
+}
+
+@media screen and (min-width: 780px) and (max-width:992px) { /* TABLET */
+    body {
+        background-image: url(../back-tablet.jpg);
+    }
+
+
+    img#phone {display: none; }
+img#tablet {display: block; }
+img#print {display: none; }
+img#pc {display: none; }
+img#tv {display: none; }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200pxpx) { /*DESKTOP */
+    body {
+        background-image: url(../);
+    }
+
+}
+
+ @media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../back-tv.jpg);
+
+        
+    
+    }
+
+    img#phone {display: none; }
+img#tablet {display: block; }
+img#print {display: none; }
+img#pc {display: none; }
+img#tv {display: none; }
+
+ }
